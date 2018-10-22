@@ -282,5 +282,13 @@ namespace info.shibuya24
 
             return result;
         }
+
+        /// <summary>
+        /// ノードのロックフラグを変更
+        /// </summary>
+        public void SetLock(Vector2Int lockNodeId, bool isLock)
+        {
+            _nodes[lockNodeId.x, lockNodeId.y].SetIsLock(isLock);
+        }
     }
 }
