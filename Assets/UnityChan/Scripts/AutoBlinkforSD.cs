@@ -5,7 +5,7 @@
 //
 using UnityEngine;
 using System.Collections;
-using System.Security.Policy;
+//using System.Security.Policy;
 
 namespace UnityChan
 {
@@ -108,7 +108,7 @@ namespace UnityChan
 		}
 
 		void SetCloseEyes ()
-		{	
+		{
 			ref_face.SetBlendShapeWeight (index_EYE_blk, ratio_Close);
 		}
 
@@ -121,7 +121,7 @@ namespace UnityChan
 		{
 			ref_face.SetBlendShapeWeight (index_EYE_blk, ratio_Open);
 		}
-		
+
 		// ランダム判定用関数
 		IEnumerator RandomChange ()
 		{
