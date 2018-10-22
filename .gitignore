@@ -25,3 +25,7 @@ app_root/*
 
 # rider
 .idea
+
+# External Assets
+Assets/Demigiant/*
+Assets/Demigiant.meta
