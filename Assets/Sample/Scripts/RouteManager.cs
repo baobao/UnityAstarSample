@@ -38,6 +38,11 @@ public class RouteManager : MonoBehaviour
         _astar.Initialize(tileSize);
     }
 
+    public void SetLock(Vector2Int lockNodeId, bool isLock)
+    {
+        _astar.SetLock(lockNodeId, isLock);
+    }
+
     public bool SearchRoute(Vector2Int startNodeId, Vector2Int goalNodeId, List<Vector2Int> result)
     {
         return _astar.SearchRoute(startNodeId, goalNodeId, result);

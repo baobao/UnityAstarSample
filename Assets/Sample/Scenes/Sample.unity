@@ -304,6 +304,7 @@ MonoBehaviour:
     type: 2}
   walkSpeed: 0.3
   _pattern: {fileID: 2100000, guid: 70a360ad2b531453e9fb77a936ea9d8c, type: 2}
+  _lock: {fileID: 2100000, guid: 1ab2ce972e22b41d787d5312a3e229a7, type: 2}
 --- !u!114 &1099615077
 MonoBehaviour:
   m_ObjectHideFlags: 0

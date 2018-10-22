@@ -29,6 +29,9 @@ public class Sample : MonoBehaviour
     [SerializeField]
     private Material _pattern;
 
+    [SerializeField]
+    private Material _lock;
+
     void Start()
     {
         tiles = new Tile[tileSize, tileSize];
@@ -51,6 +54,20 @@ public class Sample : MonoBehaviour
                 tile.transform.localPosition = new Vector3(x, tile.transform.localPosition.y, y);
             }
         }
+
+        SetLock(new Vector2Int(0, 3), true);
+        SetLock(new Vector2Int(1, 3), true);
+        SetLock(new Vector2Int(5, 0), true);
+        SetLock(new Vector2Int(5, 1), true);
+        SetLock(new Vector2Int(5, 2), true);
+        SetLock(new Vector2Int(5, 3), true);
+        SetLock(new Vector2Int(5, 4), true);
+    }
+
+    private void SetLock(Vector2Int nodeId, bool isLock)
+    {
+        RouteManager.Instance.SetLock(nodeId, isLock);
+        tiles[nodeId.x, nodeId.y].GetComponent<Renderer>().material = _lock;
     }
 
     void Update()
