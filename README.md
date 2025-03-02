@@ -1,6 +1,6 @@
 UnityAstarSample
 ====
-Astarの勉強がてらUnityで実装してみました。
+AstarアルゴリズムをUnityで実装してみました
 
 # Required
 - Unity2018.2.12f1
