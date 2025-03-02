@@ -29,3 +29,6 @@ app_root/*
 # External Assets
 Assets/Demigiant/*
 Assets/Demigiant.meta
+
+UserSettings/
+Logs/
